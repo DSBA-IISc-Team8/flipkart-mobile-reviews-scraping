@@ -42,9 +42,9 @@ scrapy crawl flipkart_scraper -o ./data/data.json  # Appends to the data.json fi
 
 It will create `data.json` file inside the `data` folder containing all the scraped data in `JSON` format
 
-# Sample Data
+## Sample Data
 Already fetched sample data is available in `data` folder
 
 
-# Troubleshooting
+## Troubleshooting
 If `data.json` file doesn't generate in proper format then just delete `data.json` file
