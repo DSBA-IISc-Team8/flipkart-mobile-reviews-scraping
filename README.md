@@ -1,6 +1,6 @@
 # Flipkart Mobile Revies scraper
 
-This is `Flipkart Mobile Revies scraper` build using `scrapy`
+This is `Flipkart Mobile Reviews scraper` build using `scrapy`
 
 # Features
 It extracts the following:
@@ -13,7 +13,15 @@ It extracts the following:
   * Product likes
   * Product dislikes
 
-# Execute Flipkart scraper
+# Setup
+
+Install required packages (scrapy)
+
+```sh
+pip install -r requirements.txt
+```
+
+# Execute Flipkart Scraper
 ### For Windows users
 ```sh
 run.bat
@@ -35,9 +43,6 @@ It will create `data.json` file inside the `data` folder containing all the scra
 # Sample Data
 Already fetched sample data is available in `data` folder
 
+
 # Troubleshooting
 If `data.json` file doesn't generate in proper format then just delete `data.json` file
-
-# Preresuisites
-- you have to install `scrapy`
-- you have to install `pillow`

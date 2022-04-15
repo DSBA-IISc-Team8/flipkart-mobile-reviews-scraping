@@ -5,13 +5,12 @@ import copy
 class FlipkartScraper(scrapy.Spider):
   name = "flipkart_scraper"
   headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.2840.71 Safari/539.36'}
-  no_of_pages = 10
+  no_of_pages = 10000
   # page_no = 0
 
   def start_requests(self):
     urls = [
-      # "https://www.flipkart.com/search?q=samsung%20mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off", I used this
-      "https://www.flipkart.com/search?q=samsung+mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off&page=11"
+      "https://www.flipkart.com/search?q=samsung%20mobile&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
     ] # Change this URL
 
     for url in urls:
