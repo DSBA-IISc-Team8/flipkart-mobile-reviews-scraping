@@ -1,8 +1,8 @@
 # Flipkart Mobile Revies scraper
 
-This is `Flipkart Mobile Reviews scraper` build using `scrapy`
+This is a spider to scrap the Samsung mobile reviews from `Flipkart` site. Build using `scrapy` python package
 
-# Features
+## Features
 It extracts the following:
 
   * Product Name
@@ -13,7 +13,7 @@ It extracts the following:
   * Product likes
   * Product dislikes
 
-# Setup
+## Setup
 
 Install required packages (scrapy)
 
@@ -21,7 +21,8 @@ Install required packages (scrapy)
 pip install -r requirements.txt
 ```
 
-# Execute Flipkart Scraper
+## Execute Flipkart Scraper
+
 ### For Windows users
 ```sh
 run.bat
@@ -35,6 +36,7 @@ sh ./run.sh
 ### Or can run the following command
 ```bash
 scrapy crawl flipkart_scraper -O ./data/data.json  # Overwrites the data.json file
+
 scrapy crawl flipkart_scraper -o ./data/data.json  # Appends to the data.json file
 ```
 
